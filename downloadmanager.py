@@ -8,7 +8,7 @@ def get_args():
     parser = argparse.ArgumentParser(prog="imagetoascii", description="Converts an image to ASCII art.")
     # Define the arguments.
     parser.add_argument("name", metavar="name", type=str, help="The name of the file downloaded.")
-    parser.add_arguments("url", metavar="url", type=str, help="The url to the file you want downloaded.")
+    parser.add_argument("url", metavar="url", type=str, help="The url to the file you want downloaded.")
     arguments = parser.parse_args()
     return arguments
 
