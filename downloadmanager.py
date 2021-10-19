@@ -18,5 +18,5 @@ if __name__ == "__main__":
     url: str = args.url
     filename: str = args.name
 
-    request = requests.get(url, allow_redirects=True)
-    open(filename, 'wr').write(request.content)
+    request = requests.get(url, allow_redirects=True, stream=True)
+    open(filename, 'wb').write(request.content)
